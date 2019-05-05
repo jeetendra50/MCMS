@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [POM Test Framework]">
+  <test thread-count="5" name="POM Test Cases(failed)">
+    <classes>
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <methods>
+          <include name="VerifyContactsLinkTest"/>
+          <include name="VerifyHomePageTitleTest"/>
+          <include name="close"/>
+          <include name="setup"/>
+          <include name="VerifyUsernameTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="crmlogoimageTest"/>
+          <include name="close"/>
+          <include name="loginTest"/>
+          <include name="LoginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+      <class name="com.crm.qa.testcases.ContactPageTest">
+        <methods>
+          <include name="SelectContactTest"/>
+          <include name="MultipleSelectContactTest"/>
+          <include name="VerfiyContactsLableTest"/>
+          <include name="close"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.crm.qa.testcases.ContactPageTest -->
+    </classes>
+  </test> <!-- POM Test Cases(failed) -->
+</suite> <!-- Failed suite [POM Test Framework] -->
